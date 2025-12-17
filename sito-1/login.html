@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accesso Utente | Technovum</title>
+
+    <!-- ICONA ACCANTO AL NOME DELLA PAGINA -->
+    <link rel="icon" type="image/svg+xml" href="images/logo-technovum.svg" />
+
+    <!-- FONT AWESOME PER LE ICONE -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #1a4797, #5691ff);
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      h1 {
+        font-size: 40px;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        color: #ffffff;
+      }
+
+      p {
+        text-align: center;
+        margin: 12px 0;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      form {
+        max-width: 500px;
+        margin: 15px auto;
+        padding: 25px;
+        background: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px #0000001a;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 6px;
+        font-weight: bold;
+        color: #444444;
+      }
+
+      .label-checkbox {
+        display: block;
+        margin-bottom: 16px;
+        font-weight: bold;
+        color: #444444;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      .btn,
+      .btn-home {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 16px;
+        border-radius: 4px;
+        font-size: 14px;
+        box-sizing: border-box;
+      }
+
+      input {
+        border: 1.5px solid #cccccc;
+      }
+
+      input:focus {
+        border-color: #3b82f6;
+        outline: none;
+        box-shadow: 0 0 4px #3b82f666;
+      }
+
+      .btn {
+        background: #3b82f6;
+        color: white;
+        border: none;
+        font-size: 15px;
+        margin-top: 16px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-weight: bold;
+        padding: 10px;
+        border-radius: 4px;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        transition: 0.2s;
+      }
+
+      .btn:hover {
+        background: #2563eb;
+        transition: 0.2s;
+      }
+
+      .btn .arrow {
+        opacity: 0;
+        margin-left: 0;
+        transition: all 0.2s ease;
+      }
+
+      .btn:hover .arrow {
+        opacity: 1;
+      }
+
+      .btn-home {
+        background: #262626;
+        color: #ffffff;
+        border: none;
+        font-size: 15px;
+        margin-bottom: 6px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.2s;
+      }
+
+      .btn-home:hover {
+        background: #5a5a5a;
+        transition: 0.2s;
+      }
+
+      .form-footer {
+        text-align: center;
+        margin-top: 12px;
+        font-size: 0.9rem;
+      }
+
+      .form-footer a {
+        color: #3b82f6;
+        text-decoration: none;
+      }
+
+      .form-footer a:hover {
+        text-decoration: underline;
+      }
+
+      /* STILE BOTTONE "disattivato" */
+      .disabled-link {
+        opacity: 0.3;
+        pointer-events: none;  
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Login utente 🔐</h1>
+
+    <form action="/login" method="post">
+      <!-- Username o Email -->
+      <label for="username">Username o Email:</label>
+      <input type="text" id="username" name="username" required />
+
+      <!-- Password -->
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+
+      <!-- Ricordami 'NOT REQUIRED' -->
+      <label class="label-checkbox">
+        <input type="checkbox" name="remember" />
+        Ricordami
+      </label>
+
+      <!-- Pulsante di invio -->
+      <button type="submit" class="btn">Accedi &#10140;</button>
+
+      <!-- Pulsante Home con icona -->
+      <button
+        class="btn-home"
+        type="button"
+        onclick="window.location.href='index.html'"
+      >
+        <i class="fas fa-home"></i> Home
+      </button>
+
+      <!-- Link di supporto "da implementare" | Stato: "disabled" -->
+      <p><strong><a class="disabled-link" href="/forgot-password">Hai dimenticato la password?</a></strong></p>
+      <p>
+        Non hai un account? <strong><a href="register.html">Registrati</strong></a>
+      </p>
+    </form>
+  </body>
+</html>

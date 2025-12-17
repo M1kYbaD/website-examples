@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="it" data-bs-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- PROGETTO WIKI DI GIOCHI USANDO 'BOOTSTRAP' -->
+    <title>History Games - Wiki</title>
+
+    <!-- FAVICON PAGINA -->
+    <link rel="icon" type="image/svg+xml" href="images/hg-favicon.svg" />
+
+    <!-- Importa il foglio di stile principale di Bootstrap 5.3.8 dal CDN jsDelivr
+     per utilizzare il framework CSS di Bootstrap (layout, griglie e componenti pronti all'uso) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- Importa la libreria di icone "Bootstrap Icons" (versione 1.13.1) dal CDN jsDelivr per usare le icone tramite classi CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="app.css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- NAVBAR SECTION -->
+      <nav class="navbar navbar-expand-sm" style="background-color: #b7b7b7">
+        <div class="container-fluid">
+          <!-- LOGO UFFICIALE -->
+          <a
+            class="navbar-brand d-flex align-items-center"
+            href=""
+            title="Home"
+          >
+            <img
+              src="images/history-games-logo.svg"
+              alt="Logo"
+              width="60"
+              height="60"
+            />
+            <span class="fw-bold">History Games</span>
+          </a>
+
+          <!-- SEARCH BAR PER I GIOCHI -->
+          <div class="input-group search-bar" style="max-width: 250px">
+            <input
+              type="text"
+              class="form-control"
+              list="datalistOptions"
+              id="gamesDataList"
+              placeholder="Cerca giochi..."
+            />
+
+            <!-- da rivedere il comportamento -->
+            <datalist id="datalistOptions">
+              <option value="Space Invaders"></option>
+              <option value="Pac-Man"></option>
+              <option value="Tetris"></option>
+              <option value="Super Mario Bros."></option>
+              <option value="The Legend of Zelda"></option>
+              <option value="Street Fighter II"></option>
+              <option value="DOOM"></option>
+              <option value="Super Mario 64"></option>
+              <option value="Gran Turismo"></option>
+              <option value="Call of Duty"></option>
+              <option value="Call of Duty 4: Modern Warfare"></option>
+              <option value="Dead Space"></option>
+              <option value="Assassin's Creed II"></option>
+              <option value="Call of Duty: Black Ops"></option>
+              <option value="Minecraft"></option>
+              <option value="The Last of Us"></option>
+              <option value="Grand Theft Auto V"></option>
+              <option value="Tom Clancy's Rainbow Six Siege"></option>
+              <option value="Dark Souls III"></option>
+              <option value="Red Dead Redemption 2"></option>
+              <option value="Sekiro: Shadows Die Twice"></option>
+            </datalist>
+
+            <button class="btn btn-success" type="button">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+          <!-- aggiungere bottone tema dark -->
+        </div>
+      </nav>
+
+      <!-- HERO SECTION -->
+      <section
+        class="container vh-100 d-flex flex-column justify-content-center align-items-center"
+      >
+        <h1 class="text-center ls-n1">
+          Riscopri i titoli che hanno segnato per sempre la storia dei
+          videogiochi
+        </h1>
+        <p class="text-center">
+          Dai primi pixel che hanno illuminato le sale giochi e fatto nascere
+          intere generazioni di sognatori, alle avventure che hanno spalancato
+          mondi sconosciuti e trasformato lo schermo in un portale verso
+          l'immaginazione; dagli sparatutto che hanno riscritto le regole
+          dell'azione ai sandbox che hanno liberato la creatività e dato vita a
+          infiniti universi personali.
+        </p>
+        <p class="text-center">
+          Ogni titolo è una testimonianza di un'epoca, un tassello di un
+          linguaggio universale fatto di emozioni, sfide e conquiste condivise.
+          Lasciati guidare dalla curiosità, riscopri le pietre miliari che hanno
+          fatto la storia e celebra l'evoluzione di un medium che, da semplice
+          passatempo, è diventato arte, cultura e passione senza confini.
+        </p>
+        <ul class="list-unstyled d-flex gap-2">
+          <li>
+            <a class="btn btn-primary btn-lg shadow-lg" href="#giochi"
+              >Vai ai giochi
+              <img
+                src="images/chevron-down.svg"
+                alt="down arrow"
+                width="22"
+                height="22"
+            /></a>
+          </li>
+          <li>
+            <a class="btn btn-outline-dark btn-lg" href="#f-a-q">F.A.Qs</a>
+          </li>
+        </ul>
+      </section>
+    </header>
+
+    <main>
+      <!-- CARDS SECTION (ordinate per anno di uscita) -->
+      <!-- aggiungere (almeno) 3 nuove card + trasformare in 'linear-carousel' -->
+      <section class="container mb-12" id="giochi">
+        <h2 class="header-cards-section text-center mb-5">
+          Scopri i giochi che hanno fatto la storia:
+        </h2>
+        <div class="row g-3 justify-content-between">
+          <div class="col-12 col-md-4 col-lg-3 d-flex">
+            <div class="card my-5 my-md-0 h-100 d-flex flex-column border-2">
+              <img
+                src="images/space-invaders.png"
+                class="card-img-top min-height-feature-image"
+                alt="space invaders"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Space Invaders</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">1978</h6>
+                <p class="card-text mt-auto lh-sm">
+                  Space Invaders è il classico che ha lanciato la leggenda dei
+                  videogiochi: uno scontro spaziale senza tempo che ha acceso la
+                  passione per il gaming, segnando l'inizio di un'era digitale e
+                  influenzando profondamente generazioni di giocatori in tutto
+                  il mondo.
+                </p>
+                <a
+                  href="https://en.wikipedia.org/wiki/Space_Invaders"
+                  class="btn btn-info"
+                  target="_blank"
+                  >Wiki <span class="arrow">&#10140;</span></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 col-lg-3 d-flex">
+            <div class="card my-5 my-md-0 h-100 d-flex flex-column border-2">
+              <img
+                src="images/pac-man.png"
+                class="card-img-top min-height-feature-image"
+                alt="pac-man"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Pac-Man</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">1980</h6>
+                <p class="card-text mt-auto lh-sm">
+                  Pac-Man è un'icona senza tempo che ha segnato la storia dei
+                  videogiochi: un labirinto ricco di ritmo, strategia e
+                  inseguimenti frenetici, dove abilità e tempismo si fondono in
+                  un'esperienza semplice ma irresistibile, diventata un simbolo
+                  eterno della cultura videoludica.
+                </p>
+                <a
+                  href="https://en.wikipedia.org/wiki/Pac-Man"
+                  class="btn btn-info"
+                  target="_blank"
+                  >Wiki <span class="arrow">&#10140;</span></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 col-lg-3 d-flex">
+            <div class="card my-5 my-md-0 h-100 d-flex flex-column border-2">
+              <img
+                src="images/tetris.png"
+                class="card-img-top min-height-feature-image"
+                alt="tetris"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Tetris</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">1984</h6>
+                <p class="card-text mt-auto lh-sm">
+                  Nato nel 1984, Tetris è l'eleganza della semplicità resa
+                  leggenda: un puzzle intramontabile che combina logica,
+                  strategia e tempismo, capace di affascinare generazioni di
+                  giocatori in tutto il mondo e di definire un'icona senza tempo
+                  del gaming.
+                </p>
+                <a
+                  href="https://en.wikipedia.org/wiki/Tetris"
+                  class="btn btn-info"
+                  target="_blank"
+                  >Wiki <span class="arrow">&#10140;</span></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 col-lg-3 d-flex">
+            <div class="card my-5 my-md-0 h-100 d-flex flex-column border-2">
+              <img
+                src="images/smb.png"
+                class="card-img-top min-height-feature-image"
+                alt="super mario bros"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Super Mario Bros.</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">1985</h6>
+                <p class="card-text mt-auto lh-sm">
+                  Super Mario Bros. ha acceso la magia del videogioco: un
+                  platform Nintendo che ha trasformato Mario in un'icona eterna,
+                  con livelli creativi, salti memorabili e avventure colorate,
+                  definendo per sempre il genere e lasciando un segno indelebile
+                  nella storia del gaming.
+                </p>
+                <a
+                  href="https://en.wikipedia.org/wiki/Super_Mario_Bros."
+                  class="btn btn-info"
+                  target="_blank"
+                  >Wiki <span class="arrow">&#10140;</span></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 col-lg-3 d-flex">
+            <div class="card my-5 my-md-0 h-100 d-flex flex-column border-2">
+              <img
+                src="images/tloz.png"
+                class="card-img-top min-height-feature-image"
+                alt="the legend of zelda"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">The Legend of Zelda</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">1986</h6>
+                <p class="card-text mt-auto lh-sm">
+                  The Legend of Zelda ha dato origine a un'avventura epica senza
+                  tempo: un eroe, una principessa e un mondo leggendario in cui
+                  coraggio, esplorazione e magia hanno creato un'esperienza
+                  open-world indimenticabile e ancora influente nel gaming.
+                </p>
+                <a
+                  href="https://en.wikipedia.org/wiki/The_Legend_of_Zelda_(video_game)"
+                  class="btn btn-info"
+                  target="_blank"
+                  >Wiki <span class="arrow">&#10140;</span></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 col-lg-3 d-flex">
+            <div class="card my-5 my-md-0 h-100 d-flex flex-column border-2">
+              <img
+                src="images/sf2.jpg"
+                class="card-img-top min-height-feature-image"
+                alt="street fighter 2"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Street Fighter II</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">1991</h6>
+                <p class="card-text mt-auto lh-sm">
+                  Street Fighter II ha rivoluzionato i picchiaduro, introducendo
+                  combattimenti dinamici, personaggi iconici e mosse speciali
+                  indimenticabili, diventando un pilastro dei videogiochi e
+                  consolidando il franchise.
+                </p>
+                <a
+                  href="https://en.wikipedia.org/wiki/Street_Fighter_II"
+                  class="btn btn-info"
+                  target="_blank"
+                  >Wiki <span class="arrow">&#10140;</span></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 col-lg-3 d-flex">
+            <div class="card my-5 my-md-0 h-100 d-flex flex-column border-2">
+              <img
+                src="images/doom.jpg"
+                class="card-img-top min-height-feature-image"
+                alt="doom"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">DOOM</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">1993</h6>
+                <p class="card-text mt-auto lh-sm">
+                  DOOM è un'icona del gaming che ha ridefinito gli sparatutto:
+                  un turbine di azione frenetica, adrenalina pura e demoni
+                  infernali, offrendo combattimenti intensi e ritmo mozzafiato,
+                  diventando un punto di riferimento immortale nel panorama
+                  videoludico.
+                </p>
+                <a
+                  href="https://en.wikipedia.org/wiki/Doom_(1993_video_game)"
+                  class="btn btn-info"
+                  target="_blank"
+                  >Wiki <span class="arrow">&#10140;</span></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 col-lg-3 d-flex">
+            <div class="card my-5 my-md-0 h-100 d-flex flex-column border-2">
+              <img
+                src="images/sm64.jpg"
+                class="card-img-top min-height-feature-image"
+                alt="sm64"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Super Mario 64</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">1996</h6>
+                <p class="card-text mt-auto lh-sm">
+                  Super Mario 64 ha ridefinito il concetto di platform
+                  introducendo il vero 3D nel mondo dei videogiochi, offrendo
+                  libertà di movimento, livelli esplorabili e un'esperienza
+                  rivoluzionaria che ha segnato un'epoca.
+                </p>
+                <a
+                  href="https://en.wikipedia.org/wiki/Super_Mario_64"
+                  class="btn btn-info"
+                  target="_blank"
+                  >Wiki <span class="arrow">&#10140;</span></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 col-lg-3 d-flex">
+            <div class="card my-5 my-md-0 h-100 d-flex flex-column border-2">
+              <img
+                src="images/gran-turismo.jpg"
+                class="card-img-top min-height-feature-image"
+                alt="gran turismo"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Gran Turismo</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">1997</h6>
+                <p class="card-text mt-auto lh-sm">
+                  Gran Turismo ha rivoluzionato il genere dei giochi di guida
+                  con una simulazione realistica, un parco auto vastissimo e una
+                  cura tecnica senza precedenti, diventando il punto di
+                  riferimento per tutti i racing game successivi.
+                </p>
+                <a
+                  href="https://en.wikipedia.org/wiki/Gran_Turismo_(1997_video_game)"
+                  class="btn btn-info"
+                  target="_blank"
+                  >Wiki <span class="arrow">&#10140;</span></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 col-lg-3 d-flex">
+            <div class="card my-5 my-md-0 h-100 d-flex flex-column border-2">
+              <img
+                src="images/cod.jpg"
+                class="card-img-top min-height-feature-image"
+                alt="COD"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Call of Duty</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">2003</h6>
+                <p class="card-text mt-auto lh-sm">
+                  Il primo Call of Duty ha rivoluzionato gli sparatutto in prima
+                  persona, portando i giocatori nella Seconda Guerra Mondiale
+                  con realismo, narrazione corale e battaglie epiche, dando
+                  inizio a una saga leggendaria.
+                </p>
+                <a
+                  href="https://en.wikipedia.org/wiki/Call_of_Duty_(video_game)"
+                  class="btn btn-info"
+                  target="_blank"
+                  >Wiki <span class="arrow">&#10140;</span></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 col-lg-3 d-flex">
+            <div class="card my-5 my-md-0 h-100 d-flex flex-column border-2">
+              <img
+                src="images/cod4-mw.jpg"
+                class="card-img-top min-height-feature-image"
+                alt="COD4 - MW"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Call of Duty 4: Modern Warfare</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">2007</h6>
+                <p class="card-text mt-auto lh-sm">
+                  Call of Duty 4: Modern Warfare ha ridefinito il genere degli
+                  sparatutto in prima persona con una campagna intensa e
+                  cinematografica e un multiplayer rivoluzionario, diventando il
+                  punto di riferimento per la guerra moderna nei videogiochi.
+                </p>
+                <a
+                  href="https://en.wikipedia.org/wiki/Call_of_Duty_4:_Modern_Warfare"
+                  class="btn btn-info"
+                  target="_blank"
+                  >Wiki <span class="arrow">&#10140;</span></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 col-lg-3 d-flex">
+            <div class="card my-5 my-md-0 h-100 d-flex flex-column border-2">
+              <img
+                src="images/dead-space.jpg"
+                class="card-img-top min-height-feature-image"
+                alt="dead space"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Dead Space</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">2008</h6>
+                <p class="card-text mt-auto lh-sm">
+                  Dead Space ha rivoluzionato l'horror spaziale nei videogiochi:
+                  tensione claustrofobica, mostri inquietanti e ambientazioni
+                  cinematografiche, offrendo un'esperienza immersiva e
+                  spaventosa che lo consacra come nuovo riferimento del survival
+                  horror.
+                </p>
+                <a
+                  href="https://en.wikipedia.org/wiki/Dead_Space_(2008_video_game)"
+                  class="btn btn-info"
+                  target="_blank"
+                  >Wiki <span class="arrow">&#10140;</span></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 col-lg-3 d-flex">
+            <div class="card my-5 my-md-0 h-100 d-flex flex-column border-2">
+              <img
+                src="images/assassins-creed-2.jpg"
+                class="card-img-top min-height-feature-image"
+                alt="assassin's creed 2"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Assassin's Creed II</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">2009</h6>
+                <p class="card-text mt-auto lh-sm">
+                  Assassin's Creed II è un capitolo leggendario che ha
+                  ridefinito l'avventura storica: intrighi rinascimentali,
+                  parkour fluido e combattimenti eleganti, offre un mix
+                  irresistibile di libertà, atmosfera e narrazione, diventando
+                  un punto di riferimento indimenticabile della saga.
+                </p>
+                <a
+                  href="https://en.wikipedia.org/wiki/Assassin%27s_Creed_II"
+                  class="btn btn-info"
+                  target="_blank"
+                  >Wiki <span class="arrow">&#10140;</span></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 col-lg-3 d-flex">
+            <div class="card my-5 my-md-0 h-100 d-flex flex-column border-2">
+              <img
+                src="images/cod-bo.png"
+                class="card-img-top min-height-feature-image"
+                alt="COD - BO"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Call of Duty: Black Ops</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">2010</h6>
+                <p class="card-text mt-auto lh-sm">
+                  Black Ops è un'esperienza esplosiva che ha ridefinito gli
+                  sparatutto moderni: una miscela di azione serrata, missioni ad
+                  alta tensione e atmosfere di cospirazione, offrendo scontri
+                  intensi e momenti iconici, diventando uno dei capitoli più
+                  emblematici e amati della serie.
+                </p>
+                <a
+                  href="https://en.wikipedia.org/wiki/Call_of_Duty:_Black_Ops"
+                  class="btn btn-info"
+                  target="_blank"
+                  >Wiki <span class="arrow">&#10140;</span></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 col-lg-3 d-flex">
+            <div class="card my-5 my-md-0 h-100 d-flex flex-column border-2">
+              <img
+                src="images/minecraft.png"
+                class="card-img-top min-height-feature-image"
+                alt="minecraft"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Minecraft</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">2011</h6>
+                <p class="card-text mt-auto lh-sm">
+                  Minecraft offre un'esperienza unica tra esplorazione infinita
+                  e costruzioni creative, dove ingegno, avventura e libertà si
+                  fondono, permettendo di plasmare mondi straordinari e vivere
+                  ogni partita come un'avventura originale e senza limiti.
+                </p>
+                <a
+                  href="https://en.wikipedia.org/wiki/Minecraft"
+                  class="btn btn-info"
+                  target="_blank"
+                  >Wiki <span class="arrow">&#10140;</span></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 col-lg-3 d-flex">
+            <div class="card my-5 my-md-0 h-100 d-flex flex-column border-2">
+              <img
+                src="images/tlou.jpg"
+                class="card-img-top min-height-feature-image"
+                alt="the last of us"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">The Last of Us</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">2013</h6>
+                <p class="card-text mt-auto lh-sm">
+                  The Last of Us racconta un viaggio intenso tra rovina e
+                  speranza, dove emozioni profonde, sopravvivenza e legami umani
+                  si intrecciano in un mondo ostile, offrendo un'avventura
+                  toccante ricca di atmosfera, tensione e momenti
+                  indimenticabili unici.
+                </p>
+                <a
+                  href="https://en.wikipedia.org/wiki/The_Last_of_Us_(video_game)"
+                  class="btn btn-info"
+                  target="_blank"
+                  >Wiki <span class="arrow">&#10140;</span></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 col-lg-3 d-flex">
+            <div class="card my-5 my-md-0 h-100 d-flex flex-column border-2">
+              <img
+                src="images/gta5.png"
+                class="card-img-top min-height-feature-image"
+                alt="grand theft auto 5"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Grand Theft Auto V</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">2013</h6>
+                <p class="card-text mt-auto lh-sm">
+                  Grand Theft Auto V conduce dalle strade vibranti di Los Santos
+                  alle imprese criminali più audaci, combinando libertà totale,
+                  azione frenetica e satira pungente in un mondo imprevedibile
+                  dove ogni scelta apre nuove occasioni e storie memorabili.
+                </p>
+                <a
+                  href="https://en.wikipedia.org/wiki/Grand_Theft_Auto_V"
+                  class="btn btn-info"
+                  target="_blank"
+                  >Wiki <span class="arrow">&#10140;</span></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 col-lg-3 d-flex">
+            <div class="card my-5 my-md-0 h-100 d-flex flex-column border-2">
+              <img
+                src="images/tc-rss.jpg"
+                class="card-img-top min-height-feature-image"
+                alt=""
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Tom Clancy's Rainbow Six Siege</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">2015</h6>
+                <p class="card-text mt-auto lh-sm">
+                  Tom Clancy's Rainbow Six Siege si distingue per il suo
+                  approccio tattico profondo, l'uso strategico degli operatori e
+                  le mappe altamente distruttibili, offrendo un'esperienza
+                  cooperativa intensa che ha ridefinito gli sparatutto
+                  competitivi moderni.
+                </p>
+                <a
+                  href="https://en.wikipedia.org/wiki/Tom_Clancy%27s_Rainbow_Six_Siege"
+                  class="btn btn-info"
+                  target="_blank"
+                  >Wiki <span class="arrow">&#10140;</span></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 col-lg-3 d-flex">
+            <div class="card my-5 my-md-0 h-100 d-flex flex-column border-2">
+              <img
+                src="images/dark-souls-3.jpg"
+                class="card-img-top min-height-feature-image"
+                alt="dark souls 3"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Dark Souls III</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">2016</h6>
+                <p class="card-text mt-auto lh-sm">
+                  Dark Souls III offre un viaggio epico tra ombre e splendore,
+                  dove sfide implacabili e scenari imponenti mettono alla prova
+                  determinazione e abilità, creando un'esperienza intensa e
+                  gratificante che celebra resilienza, coraggio e forza
+                  interiore profonda.
+                </p>
+                <a
+                  href="https://en.wikipedia.org/wiki/Dark_Souls_III"
+                  class="btn btn-info"
+                  target="_blank"
+                  >Wiki <span class="arrow">&#10140;</span></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 col-lg-3 d-flex">
+            <div class="card my-5 my-md-0 h-100 d-flex flex-column border-2">
+              <img
+                src="images/rdr2.jpg"
+                class="card-img-top min-height-feature-image"
+                alt="Red Dead Redemption 2"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Red Dead Redemption 2</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">2018</h6>
+                <p class="card-text mt-auto lh-sm">
+                  Red Dead Redemption 2 si distingue per la sua narrativa
+                  intensa, un mondo aperto ricco di dettagli e personaggi
+                  costruiti con cura, offrendo un'esperienza coinvolgente che lo
+                  rende un punto di riferimento per i giochi d'azione e
+                  avventura western.
+                </p>
+                <a
+                  href="https://en.wikipedia.org/wiki/Red_Dead_Redemption_2"
+                  class="btn btn-info"
+                  target="_blank"
+                  >Wiki <span class="arrow">&#10140;</span></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 col-lg-3 d-flex">
+            <div class="card my-5 my-md-0 h-100 d-flex flex-column border-2">
+              <img
+                src="images/s-sdt.jpg"
+                class="card-img-top min-height-feature-image"
+                alt="Sekiro: Shadows Die Twice"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Sekiro: Shadows Die Twice</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">2019</h6>
+                <p class="card-text mt-auto lh-sm">
+                  Sekiro: Shadows Die Twice unisce precisione tecnica e
+                  intensità nel combattimento, offrendo un'avventura impegnativa
+                  e stilisticamente unica che ha ridefinito gli action basati
+                  sulla maestria del giocatore, diventando un punto di
+                  riferimento del genere.
+                </p>
+                <a
+                  href="https://en.wikipedia.org/wiki/Sekiro:_Shadows_Die_Twice"
+                  class="btn btn-info"
+                  target="_blank"
+                  >Wiki <span class="arrow">&#10140;</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PARAGRAFO CON 'DISCLAIMER' -->
+        <p class="p-disclaimer fw-medium lh-sm">
+          *I link nelle card rimandano alle pagine in
+          <strong>inglese</strong> di <strong>Wikipedia</strong>. Questa scelta
+          è motivata da criteri di standardizzazione e dalla maggiore
+          disponibilità e verificabilità dei contenuti.
+        </p>
+      </section>
+
+      <!-- ACCORDION (FAQs) SECTION -->
+      <section class="container mb-12" id="f-a-q">
+        <h2 class="text-center mb-4">
+          F.A.Qs
+          <i class="bi bi-question-square-fill"></i>
+        </h2>
+        <div class="row justify-content-center">
+          <div class="col-8">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="false"
+                    aria-controls="collapseOne"
+                  >
+                    Devo installare qualcosa per giocare?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>No!</strong> I giochi si avviano direttamente dal
+                    <strong><u>browser</u></strong
+                    >. Basta cliccare su <strong><i>"Gioca Ora"</i></strong> e
+                    selezioni il titolo desiderato.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    È necessario creare un account per giocare?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>No!</strong> Tuttavia, un
+                    <strong><u>account gratuito</u></strong> ti permette di:
+                    salvare i <strong>progressi</strong>, collezionare
+                    <strong>trofei</strong> ed aggiungere giocatori alla
+                    <strong>lista amici</strong>.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    I giochi sono gratuiti?
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>Sì!</strong> Tutti i giochi disponibili sul sito
+                    sono
+                    <strong
+                      ><i><u>completamente gratuiti</u></i></strong
+                    >
+                    e
+                    <strong
+                      ><i><u>sicuri</u></i></strong
+                    >, senza <strong>abbonamenti</strong> e
+                    <strong>pagamenti</strong>.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    Posso giocare anche da smartphone o tablet?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>Certo!</strong> Il sito è stato
+                    <strong>ottimizzato</strong> anche per un utilizzo su
+                    <strong
+                      ><i><u>dispositivi mobili</u></i></strong
+                    >
+                    senza perdita di qualità.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                  >
+                    I giochi sono fedeli alle versioni originali?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFive"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong><i>ASSOLUTAMENTE SÌ!</i></strong> Ogni titolo
+                    mantiene <strong><u>l'esperienza originale</u></strong
+                    >, con piccoli <strong>miglioramenti grafici</strong> e di
+                    <strong>stabilità</strong> per garantire
+                    <strong>compatibilità</strong>.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseSix"
+                    aria-expanded="false"
+                    aria-controls="collapseSix"
+                  >
+                    Posso giocare in multiplayer con amici?
+                  </button>
+                </h2>
+                <div
+                  id="collapseSix"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>Sì!</strong> Alcuni titoli supportano il
+                    <strong><u>multiplayer online</u></strong> o in
+                    <strong><u>locale</u></strong
+                    >, con possibilità di creare
+                    <strong>lobby private</strong> e
+                    <strong>partite personalizzate</strong>.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseSeven"
+                    aria-expanded="false"
+                    aria-controls="collapseSeven"
+                  >
+                    I giochi vengono aggiornati nel tempo?
+                  </button>
+                </h2>
+                <div
+                  id="collapseSeven"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>Sì!</strong> Il catalogo viene costantemente
+                    aggiornato con: <strong>nuove versioni</strong>,
+                    <strong>correzioni di bug</strong> e
+                    <strong>miglioramenti grafici</strong>. Inoltre, vengono
+                    spesso aggiunti <strong>nuovi titoli</strong> per ampliare
+                    il catalogo ed offrire un'ampia scelta per diversi generi.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseEight"
+                    aria-expanded="false"
+                    aria-controls="collapseEight"
+                  >
+                    Come posso segnalare un problema o un bug?
+                  </button>
+                </h2>
+                <div
+                  id="collapseEight"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Puoi inviare una <strong>segnalazione</strong> tramite il
+                    modulo <strong>"<u>Segnala un problema</u>"</strong>. Il
+                    nostro team tecnico provvederà a rispondere
+                    <strong>entro 24 ore</strong>.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- aggiornare la data ad ogni modifica! -->
+      <p
+        class="text-end text-muted mb-2 me-2"
+        style="color: #404040 !important"
+      >
+        Ultima modifica: 2025-12-01
+      </p>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer-bg text-white text-center py-3" id="footer">
+      <ul class="d-inline-flex my-1 justify-content-center gap-3 list-unstyled">
+        <li>
+          <a class="footer-a-color fw-bold" href="termini-di-servizio.html"
+            >Termini di utilizzo</a
+          >
+        </li>
+        <li>
+          <a class="footer-a-color fw-bold" href="informativa-privacy.html"
+            >Informativa Privacy</a
+          >
+        </li>
+        <li>
+          <a class="footer-a-color fw-bold" href="chi-siamo.html">Chi Siamo</a>
+        </li>
+        <li>
+          <a class="footer-a-color fw-bold" href="contatti.html">Contatti</a>
+        </li>
+        <li>
+          <a
+            class="footer-a-color fw-bold"
+            href=""
+            data-bs-toggle="modal"
+            data-bs-target="#segnalaProblemaModal"
+            >Segnala un problema</a
+          >
+          <i class="footer-a-color fw-bold bi bi-box-arrow-up-right"></i>
+        </li>
+      </ul>
+      <p class="fw-semibold mb-1">
+        © 2025 History Games &#183; Tutti i diritti riservati.
+      </p>
+
+      <p class="mb-1 fw-normal">
+        Realizzato con
+        <a
+          class="text-white fw-bold link-light link-offset-1 link-underline-opacity-0 link-underline-opacity-100-hover"
+          href="https://getbootstrap.com"
+          target="_blank"
+          >Bootstrap (v5.3.x)</a
+        >
+      </p>
+    </footer>
+
+    <!-- 'BACK TO TOP' BUTTON -->
+    <button
+      type="button"
+      class="btn btn-dark rounded-circle"
+      id="btn-back-to-top"
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      data-bs-title="Scorri sù"
+      title="Scorri sù"
+    >
+      🔼
+    </button>
+
+    <!-- MODAL "Segnala un problema": CENTRATO CON BACKDROP STATICO -->
+    <div
+      class="modal fade"
+      id="segnalaProblemaModal"
+      tabindex="-1"
+      aria-labelledby="segnalaProblemaLabel"
+      aria-hidden="true"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header modal-header-bg">
+            <h5 class="modal-title" id="segnalaProblemaLabel">
+              <i class="bi bi-exclamation-triangle"></i> Form di segnalazione
+              <i class="bi bi-exclamation-triangle"></i>
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Chiudi form"
+              title="Chiudi form"
+            ></button>
+          </div>
+
+          <div class="modal-body modal-body-bg">
+            <form id="formSegnalaProblema">
+              <div class="mb-3">
+                <label for="titoloSegnalazione" class="form-label fw-medium"
+                  >Titolo</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="titoloSegnalazione"
+                  placeholder="Enter a short and clear title."
+                  name="titoloSegnalazione"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <div class="d-flex gap-2">
+                  <!-- Select principale 'Tipologia segnalazione' -->
+                  <select
+                    class="form-select"
+                    aria-label="Tipologia"
+                    name="tipologiaSegnalazione"
+                    required
+                  >
+                    <option value="" selected>Tipologia:</option>
+                    <option value="visualIssue">Visual Issue</option>
+                    <option value="securityIssue">Security Issue</option>
+                    <option value="technicalIssue">Technical Issue</option>
+                    <option value="functionalityIssue">
+                      Functionality Issue
+                    </option>
+                    <option value="performanceIssue">Performance Issue</option>
+                    <option value="data-contentIssue">
+                      Data/Content Issue
+                    </option>
+                    <option value="altro">Altro...</option>
+                  </select>
+
+                  <!-- Select secondaria a destra 'Priorità segnalazione' -->
+                  <select
+                    class="form-select"
+                    aria-label="Priorità"
+                    name="prioritàSegnalazione"
+                    required
+                  >
+                    <option value="" selected>Priorità:</option>
+                    <option value="lowPriority">🟢 Low</option>
+                    <option value="mediumPriority">🟡 Medium</option>
+                    <option value="highPriority">🔴 High</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="messaggioSegnalazione" class="form-label fw-medium"
+                  >Descrizione</label
+                >
+                <textarea
+                  class="form-control"
+                  id="messaggioSegnalazione"
+                  placeholder="Provide a detailed description of the problem including: steps to reproduce it, expected behavior and actual behavior."
+                  name="messaggioSegnalazione"
+                  rows="8"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="mb-3">
+                <label for="emailSegnalazione" class="form-label fw-medium"
+                  >Email (opzionale)</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="emailSegnalazione"
+                  name="emailSegnalazione"
+                />
+              </div>
+              <div
+                class="modal-footer p-3 pb-0 justify-content-center border-dark-subtle"
+              >
+                <button type="submit" class="btn btn-primary w-auto">
+                  Invia segnalazione <i class="bi bi-send-exclamation-fill"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- TOAST DI CONFERMA INVIO SEGNALAZIONE -->
+    <div class="position-fixed top-0 end-0 p-3" style="z-index: 2000">
+      <div
+        id="toastSegnalazione"
+        class="toast align-items-center text-bg-success border-0"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="d-flex">
+          <div class="toast-body">
+            La tua segnalazione è stata inviata con successo!
+          </div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+            aria-label="Chiudi"
+          ></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Importa il file JavaScript di Bootstrap 5.3.8 (bundle con Popper incluso)
+     dal CDN jsDelivr per abilitare i componenti interattivi di Bootstrap
+     come modali, tooltip, dropdown e offcanvas -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- SCRIPT PER GESTIRE L'INVIO DEL FORM "Segnalazione Problema/Bug" -->
+    <script>
+      document
+        .getElementById("formSegnalaProblema")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // Mostra il toast di conferma
+          const toastEl = document.getElementById("toastSegnalazione");
+          const toast = bootstrap.Toast.getOrCreateInstance(toastEl);
+          toast.show();
+
+          // Chiudi il modal
+          const modalEl = document.getElementById("segnalaProblemaModal");
+          const modal = bootstrap.Modal.getOrCreateInstance(modalEl);
+          modal.hide();
+
+          // Reset del form
+          this.reset();
+        });
+    </script>
+
+    <!-- SCRIPT 'BACK TO TOP' BUTTON -->
+    <script>
+      const btnTop = document.getElementById("btn-back-to-top");
+
+      // Show button after scrolling down 565px ('header' section end)
+      window.onscroll = function () {
+        if (
+          document.body.scrollTop > 565 ||
+          document.documentElement.scrollTop > 565
+        ) {
+          btnTop.style.display = "block";
+        } else {
+          btnTop.style.display = "none";
+        }
+      };
+
+      // Smooth scroll to top
+      btnTop.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    </script>
+
+    <script>
+      const tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    </script>
+  </body>
+</html>

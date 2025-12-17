@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrazione Utente | Technovum</title>
+
+    <!-- ICONA ACCANTO AL NOME DELLA PAGINA -->
+    <link rel="icon" type="image/svg+xml" href="images/logo-technovum.svg" />
+
+    <!-- FONT AWESOME PER LE ICONE -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #5691ff, #1a4797);
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      h1 {
+        font-size: 40px;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        color: #ffffff;
+      }
+
+      p {
+        text-align: center;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      form {
+        max-width: 500px;
+        margin: 15px auto;
+        padding: 25px;
+        background: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      label {
+        display: block;
+        margin-bottom: 6px;
+        font-weight: bold;
+        color: #444;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      .btn,
+      .btn-home {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 16px;
+        border-radius: 4px;
+        font-size: 14px;
+        box-sizing: border-box; /* assicura che padding e bordo non allarghino */
+      }
+
+      input {
+        border: 1.5px solid #cccccc;
+      }
+
+      input:focus {
+        border-color: #3b82f6;
+        outline: none;
+        box-shadow: 0 0 4px #3b82f666;
+      }
+
+      .btn {
+        background: #3b82f6;
+        color: white;
+        border: none;
+        font-size: 15px;
+        margin-top: 16px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-weight: bold;
+        padding: 10px;
+        border-radius: 4px;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: 0.2s;
+      }
+
+      .btn:hover {
+        background: #2563eb;
+        transition: 0.2s;
+      }
+
+      .btn-home {
+        background: #262626;
+        color: white;
+        border: none;
+        font-size: 15px;
+        margin-bottom: 6px;
+        cursor: pointer;
+        font-weight: bold;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: 0.2s;
+      }
+
+      .btn-home:hover {
+        background-color: #5a5a5a;
+        transition: 0.2s;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Crea un account ✍️</h1>
+
+    <form action="/register" method="post">
+      <!-- Nome completo -->
+      <label for="fullname">Nome completo:</label>
+      <input
+        type="text"
+        id="fullname"
+        name="fullname"
+        placeholder="Nome e Cognome"
+        required
+      />
+
+      <!-- Email -->
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="you@email.com"
+        required
+      />
+
+      <!-- Username -->
+      <label for="username">Username:</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="Crea username"
+        required
+      />
+
+      <!-- Password -->
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        minlength="8"
+        placeholder="Crea la password"
+        required
+      />
+
+      <!-- Conferma Password -->
+      <label for="confirm-password">Conferma Password:</label>
+      <input
+        type="password"
+        id="confirm-password"
+        name="confirm-password"
+        minlength="8"
+        placeholder="Conferma la password"
+        required
+      />
+
+      <!-- Pulsante di invio -->
+      <button type="submit" class="btn">Registrati &#10140;</button>
+
+      <!-- Pulsante Home con icona -->
+      <button
+        class="btn-home"
+        type="button"
+        onclick="window.location.href='index.html'"
+      >
+        <i class="fas fa-home"></i> Home
+      </button>
+
+      <p>
+        Sei già registrato? <strong><a href="login.html">Accedi</a></strong>
+      </p>
+    </form>
+  </body>
+</html>

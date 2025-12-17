@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parla con noi | Technovum</title>
+
+    <!-- ICONA DELLA PAGINA -->
+    <link rel="icon" type="image/svg+xml" href="images/logo-technovum.svg" />
+
+    <!-- FONT AWESOME PER LE ICONE -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg, #8869e1, #47a4f2);
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        color: #333333;
+      }
+
+      h1 {
+        font-size: 40px;
+        text-align: center;
+        margin: 30px 0;
+        color: #f8f9fa;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      /* ====== Form ====== */
+      form {
+        max-width: 500px;
+        margin: 15px auto;
+        padding: 25px;
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px #0000001a;
+      }
+
+      /* Etichette */
+      label {
+        display: block;
+        margin-bottom: 6px;
+        font-weight: bold;
+        color: #444444;
+      }
+
+      .label-checkbox {
+        display: block;
+        margin-bottom: 16px;
+        font-weight: bold;
+        color: #444444;
+      }
+
+      /* Campi di input e textarea */
+      input[type="text"],
+      input[type="email"],
+      textarea,
+      .btn,
+      .btn-home {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 16px;
+        border-radius: 5px;
+        font-size: 14px;
+        box-sizing: border-box;
+      }
+
+      input,
+      textarea {
+        border: 1px solid #cccccc;
+      }
+
+      input:focus,
+      textarea:focus {
+        border-color: #3b82f6;
+        outline: none;
+        box-shadow: 0 0 4px #3b82f666;
+      }
+
+      textarea {
+        resize: none;
+      }
+
+      /* Pulsanti */
+      .btn {
+        background-color: #3b82f6;
+        color: #ffffff;
+        border: none;
+        font-size: 15px;
+        margin-top: 16px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.2s;
+      }
+
+      .btn:hover {
+        background: #2563eb;
+      }
+
+      .btn-home {
+        background-color: #262626;
+        color: white;
+        border: none;
+        font-size: 15px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.2s;
+      }
+
+      .btn-home:hover {
+        background-color: #5a5a5a;
+      }
+    </style>
+  </head>
+
+  <!-- "PARLA CON NOI" FORM PAGE -->
+  <body>
+    <h1>Scrivici: ti aiutiamo noi 🫱🏻‍🫲🏻</h1>
+
+    <form action="/send-message" method="post">
+      <label for="name">Nome Completo:</label>
+      <input
+        type="text"
+        id="name"
+        name="name_surname"
+        placeholder="Nome e Cognome"
+        required
+      />
+
+      <!-- Email -->
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="you@company.com"
+        required
+      />
+
+      <!-- Oggetto -->
+      <label for="subject">Oggetto:</label>
+      <input
+        type="text"
+        id="subject"
+        name="subject"
+        placeholder="Titolo"
+        required
+      />
+
+      <!-- Messaggio -->
+      <label for="message">Messaggio:</label>
+      <textarea
+        id="message"
+        name="message"
+        rows="8"
+        maxlength="1500"
+        placeholder="Lasciaci un messaggio..."
+        required
+      ></textarea>
+
+      <!-- Accettazione privacy policy -->
+      <label for="privacy" class="label-checkbox">
+        <input
+          type="checkbox"
+          id="privacy"
+          name="accept_privacy_policy"
+          required
+        />
+        Accetto
+        <strong
+          ><a href="informativa-privacy.html"
+            >l'Informativa sulla Privacy</a
+          ></strong
+        >
+        di Technovum.
+      </label>
+
+      <!-- Pulsante 'Invio' -->
+      <button type="submit" class="btn">Invia &#9993;</button>
+
+      <!-- Pulsante 'Home con icona' -->
+      <button
+        class="btn-home"
+        type="button"
+        onclick="window.location.href='index.html'"
+      >
+        <i class="fas fa-home"></i> Home
+      </button>
+    </form>
+  </body>
+</html>

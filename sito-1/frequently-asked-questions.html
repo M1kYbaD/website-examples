@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>F.A.Qs | Technovum</title>
+
+    <!-- ICONA DELLA PAGINA -->
+    <link rel="icon" type="image/svg+xml" href="images/logo-technovum.svg" />
+    <style>
+      /* ====== Stile generale ====== */
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #cccccc;
+        color: #333333;
+        margin: 0;
+        padding: 20px;
+        line-height: 1.6;
+      }
+
+      /* Titolo principale */
+      h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #000000;
+      }
+
+      /* Lista ordinata FAQ */
+      ol {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0;
+        list-style: none; /* tolgo i numeri standard */
+        counter-reset: faq-counter;
+      }
+
+      ol li {
+        counter-increment: faq-counter;
+        margin: 20px 0 10px;
+      }
+
+      ol li h2::before {
+        content: counter(faq-counter) ". ";
+        font-weight: bold;
+        color: #3b82f6; /* blu acceso */
+      }
+
+      h2 {
+        margin: 0;
+        color: #000000;
+      }
+
+      /* Risposte */
+      p {
+        font-size: 18px;
+        margin: 0 0 40px 20px;
+        padding: 10px 15px;
+        background: #eef2ff;
+        border-left: 5px solid #3b82f6;
+        border-radius: 5px;
+        color: #4d4d4d;
+      }
+    </style>
+  </head>
+
+  <!-- per tornare alla HOME "index.html" usare la freccia (←) del browser -->
+  <!-- F.A.Qs PAGE -->
+  <body>
+    <h1><u>Domande più comuni</u> (F.A.Q):</h1>
+
+    <ol>
+      <li><h2>Quanto tempo serve per realizzare un sito web?</h2></li>
+      <p>
+        Un <strong>sito vetrina</strong> richiede circa
+        <strong>2 - 4 settimane</strong>; progetti più complessi come un
+        <strong><u>e-commerce</u></strong> possono richiedere più tempo.
+      </p>
+
+      <li><h2>Che tipo di consulenza offrite in ambito dati?</h2></li>
+      <p>
+        Noi offriamo supporto su: <strong><i>data strategy</i></strong
+        >, <strong><i>business intelligence</i></strong
+        >, <strong><i>governance</i></strong
+        >, <strong><i>analisi predittiva</i></strong> e
+        <strong><i>soluzioni AI</i></strong
+        >.
+      </p>
+
+      <li>
+        <h2>
+          I miei dati sono al sicuro durante i vostri progetti di analisi?
+        </h2>
+      </li>
+      <p>
+        Sì, adottiamo <strong>protocolli avanzati</strong> e rispettiamo le normative
+        <strong><u>GDPR</u></strong> per garantire sicurezza e riservatezza.
+      </p>
+
+      <li><h2>Come vengono utilizzati i miei dati personali?</h2></li>
+      <p>
+        I dati vengono trattati nel rispetto della normativa vigente e
+        utilizzati solo per fornire i servizi richiesti o migliorare
+        l'esperienza sul sito.
+      </p>
+      <li><h2>Come posso contattare l'assistenza?</h2></li>
+      <p>
+        Puoi visionare la pagina <strong>“Contatti”</strong> del sito, dove
+        troverai i nostri recapiti diretti.
+      </p>
+
+      <li>
+        <h2>
+          Offrite anche servizi di manutenzione dopo la consegna del sito?
+        </h2>
+      </li>
+      <p>
+        Sì, proponiamo <strong>pacchetti di manutenzione</strong> e <strong>aggiornamento</strong> per garantire
+        che il sito rimanga sicuro, veloce e sempre aggiornato.
+      </p>
+
+      <li>
+        <h2>Posso richiedere modifiche al progetto durante lo sviluppo?</h2>
+      </li>
+      <p>
+        Certamente, gestiamo le modifiche tramite un processo di revisione
+        condiviso con il cliente, così da mantenere trasparenza su tempi e
+        costi.
+      </p>
+
+      <li><h2>Realizzate anche "applicazioni mobile"?</h2></li>
+      <p>
+        Sì, sviluppiamo <strong>applicazioni native e ibride</strong> per
+        <strong><u>iOS</u></strong> e <strong><u>Android</u></strong
+        >, integrate con i sistemi web quando necessario.
+      </p>
+
+      <li><h2>Quali metodi di pagamento accettate?</h2></li>
+      <p>
+        Accettiamo <strong>bonifico bancario</strong>,
+        <strong>carta di credito</strong> e
+        <strong>sistemi di pagamento digitali sicuri</strong>. Le modalità
+        vengono concordate in fase contrattuale.
+      </p>
+
+      <li>
+        <h2>Offrite formazione per l'utilizzo delle soluzioni sviluppate?</h2>
+      </li>
+      <p>
+        Sì, forniamo <strong>sessioni di training personalizzate</strong> per
+        permettere al cliente di gestire in autonomia i propri strumenti
+        digitali.
+      </p>
+    </ol>
+  </body>
+</html>
