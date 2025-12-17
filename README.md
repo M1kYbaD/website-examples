@@ -14,7 +14,7 @@ L'obiettivo è fornire spunti pratici per l'apprendimento e la sperimentazione d
 ## List
 
 - `sito-1`: sito web per una azienda informatica di servizi Web.
-- `sito-bootstrap`: sito wiki di videogiochi.
+- `sito-bootstrap`: sito wiki di videogiochi vari.
 
 ## Additional Resources
 
