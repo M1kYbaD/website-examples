@@ -6,11 +6,11 @@ The goal is to provide practical insights for learning and experimenting with ba
 
 ## Features
 
-- `Esempi di layout responsive`
-- `Effetti e animazioni con CSS`
-- `Script interattivi con JavaScript`
-- `Progetti semplici per esercitarsi`
-- `Integrazione con il framework front-end Bootstrap`
+- `Examples of responsive layouts`
+- `Effects and animations with CSS`
+- `Interactive scripts with JavaScript`
+- `Simple projects to practice`
+- `Integration with the Bootstrap front-end framework`
 
 ## List
 
