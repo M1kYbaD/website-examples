@@ -20,4 +20,4 @@ L'obiettivo è fornire spunti pratici per l'apprendimento e la sperimentazione d
 
 For useful information and tutorials about **HTML**, **CSS** and **JavaScript**, visit the [W3 Schools](https://www.w3schools.com/) page.
 
-You can also look at the [Bootstrap Documentation](https://getbootstrap.com/) used for `sito-bootstrap`.
+You can also look at the [Bootstrap Documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/) used for `sito-bootstrap`.
