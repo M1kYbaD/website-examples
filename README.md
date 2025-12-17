@@ -1,8 +1,8 @@
 # Website Examples
 
-Questo progetto raccoglie esempi di **siti web** basilari.
+This repository collects examples of basic websites.
 
-L'obiettivo è fornire spunti pratici per l'apprendimento e la sperimentazione delle tecnologie web di base.
+The goal is to provide practical insights for learning and experimenting with basic web technologies.
 
 ## Features
 
