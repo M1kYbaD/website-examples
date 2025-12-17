@@ -9,6 +9,7 @@ L'obiettivo è fornire spunti pratici per l'apprendimento e la sperimentazione d
 - `Effetti e animazioni con CSS`
 - `Script interattivi con JavaScript`
 - `Progetti semplici per esercitarsi`
+- `Integrazione con il framework front-end Bootstrap`
 
 ## List
 
