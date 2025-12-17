@@ -10,5 +10,5 @@ This repository contains example **websites** built for learning and experimenta
 
 ## List
 
-- `sito-1`:
-- `sito-bootstrap`:
+- `sito-1`: sito web per una azienda informatica di servizi Web.
+- `sito-bootstrap`: semplice wiki di videogiochi.
