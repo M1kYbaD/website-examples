@@ -1,6 +1,6 @@
 # Website Examples
 
-Questo progetto raccoglie esempi di **siti web**.  
+Questo progetto raccoglie esempi di **siti web** basilari.  
 L'obiettivo è fornire spunti pratici per l'apprendimento e la sperimentazione delle tecnologie web di base.
 
 ## Features
