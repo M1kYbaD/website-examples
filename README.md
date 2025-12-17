@@ -1,12 +1,14 @@
 # Website Examples
 
-This repository contains example **websites** built for learning and experimentation.
+Questo progetto raccoglie esempi di **siti web**.  
+L'obiettivo è fornire spunti pratici per l'apprendimento e la sperimentazione delle tecnologie web di base.
 
 ## Features
 
-- `HTML/CSS examples`
-- `JavaScript examples`
-- `Responsive designs`
+- `Esempi di layout responsive`
+- `Effetti e animazioni con CSS`
+- `Script interattivi con JavaScript`
+- `Progetti semplici per esercitarsi`
 
 ## List
 
