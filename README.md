@@ -14,3 +14,9 @@ L'obiettivo è fornire spunti pratici per l'apprendimento e la sperimentazione d
 
 - `sito-1`: sito web per una azienda informatica di servizi Web.
 - `sito-bootstrap`: sito wiki di videogiochi.
+
+## Additional Resources
+
+For useful information and tutorials about **HTML**, **CSS** and **JavaScript**, visit the [W3 Schools](https://www.w3schools.com/) page.
+
+You can also look at the [Bootstrap Documentation](https://getbootstrap.com/) used for `sito-bootstrap`.
