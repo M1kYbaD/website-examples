@@ -14,7 +14,7 @@ Each example focuses on practical use cases to make concepts easier to understan
 
 ## List
 
-- `sito-1`: Website for an IT company offering Web services.
+- `sito-technovum`: Website for an IT company offering Web services.
 - `sito-bootstrap`: Video game wiki-style website.
 
 ## Additional Resources
