@@ -1,8 +1,11 @@
 <h1 align="center">Website Examples</h1>
 
-This repository offers hands-on examples of **basic websites**, helping you understand and experiment with **core web technologies** through practical projects.
-
-Each example focuses on practical use cases to make concepts easier to understand.
+<p align="center">
+  
+  <em>This repository offers hands-on examples of basic websites, helping you understand and experiment with core web technologies through practical projects.
+    <br>Each example focuses on practical use cases to make concepts easier to understand.</em>
+  <br>
+</p>
 
 ---
 
