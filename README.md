@@ -4,6 +4,8 @@ This repository offers hands-on examples of **basic websites**, helping you unde
 
 Each example focuses on practical use cases to make concepts easier to understand.
 
+---
+
 ## Features
 
 - `Examples of responsive layouts`
