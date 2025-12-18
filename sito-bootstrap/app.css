@@ -29,17 +29,17 @@
 }
 
 .btn-success {
-  --bs-btn-bg: #009900;
-  --bs-btn-border-color: #009900;
-  --bs-btn-hover-bg: #008000;
-  --bs-btn-hover-border-color: #008000;
-  --bs-btn-active-bg: #006600;
-  --bs-btn-active-border-color: #006600;
+  --bs-btn-bg: #00a600;
+  --bs-btn-border-color: #00a600;
+  --bs-btn-hover-bg: #008c00;
+  --bs-btn-hover-border-color: #008c00;
+  --bs-btn-active-bg: #007300;
+  --bs-btn-active-border-color: #007300;
   --bs-btn-color: #ffffff;
 }
 
 .header-cards-section {
-  background: linear-gradient(180deg, #0d0d0d, #464664);
+  background: linear-gradient(180deg, #0d0d0d, #4f4f6c);
   color: #00ffe0; /* colore neon */
   font-family: "Press Start 2P", cursive; /* font in stile arcade */
   padding: 2rem 2rem;
@@ -69,11 +69,11 @@
 }
 
 .footer-bg {
-  background: linear-gradient(0deg, #954595, #863e86);
+  background: linear-gradient(0deg, #9a4e9a, #7f3b7f);
 }
 
 .footer-a-color {
-  color: #ffd700;
+  color: #ffd90d;
 }
 
 .min-height-feature-image {
@@ -109,7 +109,7 @@
 }
 
 .modal-header-bg {
-  background: #e6e600;
+  background: #dbdb00;
 }
 
 .modal-body-bg {
