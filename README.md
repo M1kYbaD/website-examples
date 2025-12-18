@@ -1,4 +1,4 @@
-# Website Examples
+<h1 align="center">Website Examples</h1>
 
 This repository offers hands-on examples of **basic websites**, helping you understand and experiment with **core web technologies** through practical projects.
 
