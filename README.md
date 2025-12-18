@@ -21,4 +21,4 @@ Each example focuses on practical use cases to make concepts easier to understan
 
 To deepen your knowledge of **HTML**, **CSS**, and **JavaScript**, check out the tutorials on [W3Schools](https://www.w3schools.com/).
 
-For the `sito-bootstrap` example, you can refer to the official [Bootstrap documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/).
+For the `sito-bootstrap` example, refer to the official [Bootstrap documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/).
