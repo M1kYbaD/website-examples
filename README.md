@@ -1,8 +1,8 @@
 # Website Examples
 
-This repository collects examples of basic websites.
+This repository offers hands-on examples of basic websites, helping you understand and experiment with core web technologies through practical projects.
 
-The goal is to provide practical insights for learning and experimenting with basic web technologies.
+Each example focuses on practical use cases to make concepts easier to understand.
 
 ## Features
 
@@ -14,11 +14,11 @@ The goal is to provide practical insights for learning and experimenting with ba
 
 ## List
 
-- `sito-1`: sito web per una azienda informatica di servizi Web.
-- `sito-bootstrap`: sito wiki di videogiochi vari.
+- `sito-1`: Website for an IT company offering Web services.
+- `sito-bootstrap`: Video game wiki-style website.
 
 ## Additional Resources
 
-For useful information and tutorials about **HTML**, **CSS** and **JavaScript**, visit the [W3 Schools](https://www.w3schools.com/) page.
+To deepen your knowledge of **HTML**, **CSS**, and **JavaScript**, check out the tutorials on [W3Schools](https://www.w3schools.com/).
 
-You can also look at the [Bootstrap Documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/) used for `sito-bootstrap`.
+For the `sito-bootstrap` example, you can refer to the official [Bootstrap documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/).
