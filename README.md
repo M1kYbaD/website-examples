@@ -1,6 +1,10 @@
 <h1 align="center">Website Examples</h1>
 
 <p align="center">
+  <img src="public/html-5-logo.svg" alt="HTML logo" width="130px" height="130px"/>
+  <img src="public/css-3-logo.svg" alt="CSS logo" width="130px" height="130px"/>
+  <img src="public/javascript-logo.svg" alt="JavaScript logo" width="130px" height="130px"/>
+  <img src="public/bootstrap-logo.svg" alt="Bootstrap logo" width="130px" height="130px"/>
   <br>
   <em>This repository offers hands-on examples of basic websites, helping you understand and experiment with core web technologies through practical projects.
     <br>Each example focuses on practical use cases to make concepts easier to understand.</em>
