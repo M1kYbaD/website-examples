@@ -31,8 +31,8 @@
 
 ## List
 
-- `sito-bootstrap`: Videogames wiki-style website.
-- `sito-technovum`: Website for an IT company offering Web services.
+- `sito-bootstrap`: Videogames **wiki-style** website.
+- `sito-technovum`: Website for an IT company offering **Web services**.
 
 ## Additional Resources
 
