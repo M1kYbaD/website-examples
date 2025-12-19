@@ -23,7 +23,7 @@
 
 ## Features
 
-- Examples of responsive layouts
+- Examples of **responsive layouts**
 - Effects and animations with **CSS**
 - Interactive scripts with **JavaScript**
 - Simple projects to practice
