@@ -23,11 +23,11 @@
 
 ## Features
 
-- `Examples of responsive layouts`
-- `Effects and animations with CSS`
-- `Interactive scripts with JavaScript`
-- `Simple projects to practice`
-- `Integration with the Bootstrap front-end framework`
+- Examples of responsive layouts
+- Effects and animations with **CSS**
+- Interactive scripts with **JavaScript**
+- Simple projects to practice
+- Integration with the **Bootstrap** front-end framework
 
 ## List
 
