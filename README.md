@@ -26,7 +26,7 @@
 - Examples of **responsive layouts**
 - Effects and animations with **CSS**
 - Interactive scripts with **JavaScript**
-- Simple projects to practice
+- **Simple projects** to practice
 - Integration with the **Bootstrap** front-end framework
 
 ## List
