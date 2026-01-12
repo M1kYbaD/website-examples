@@ -29,7 +29,7 @@
 - **Simple projects** to practice
 - Integration with the **Bootstrap** front-end framework
 
-## List
+## Content
 
 - `sito-bootstrap`: Videogames **wiki-style** website.
 - `sito-technovum`: Website for an **IT company** offering **Web services**.
