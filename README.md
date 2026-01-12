@@ -3,10 +3,10 @@
 <p align="center">
   <table align="center">
     <tr>
-      <td><img src="public/html-5-logo.svg" alt="HTML logo" width="120" /></td>
-      <td><img src="public/css-3-logo.svg" alt="CSS logo" width="120" /></td>
-      <td><img src="public/javascript-logo.svg" alt="JavaScript logo" width="120" /></td>
-      <td><img src="public/bootstrap-logo.svg" alt="Bootstrap logo" width="120" /></td>
+      <td><img src="public/html-5-logo.svg" alt="HTML logo" width="110px" /></td>
+      <td><img src="public/css-3-logo.svg" alt="CSS logo" width="110px" /></td>
+      <td><img src="public/javascript-logo.svg" alt="JavaScript logo" width="110px" /></td>
+      <td><img src="public/bootstrap-logo.svg" alt="Bootstrap logo" width="110px" /></td>
     </tr>
   </table>
 </p>
