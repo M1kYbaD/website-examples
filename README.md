@@ -36,6 +36,6 @@
 
 ## Additional Resources
 
-To deepen your knowledge of **HTML**, **CSS**, and **JavaScript**, check out the tutorials on [W3Schools](https://www.w3schools.com/).
+To deepen your knowledge of **HTML**, **CSS**, and **JavaScript**, check out the tutorials on [W3Schools](https://www.w3schools.com/) website.
 
 For `sito-bootstrap` references, look at the official **[Bootstrap documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/) `v5.3.8`**.
