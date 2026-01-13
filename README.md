@@ -1,10 +1,10 @@
 <h1 align="center">Website Examples</h1>
 
 <p align="center">
-      <td><img src="public/html-5-logo.svg" alt="HTML logo" width="110px" /></td>
-      <td><img src="public/css-3-logo.svg" alt="CSS logo" width="110px" /></td>
-      <td><img src="public/javascript-logo.svg" alt="JavaScript logo" width="110px" /></td>
-      <td><img src="public/bootstrap-logo.svg" alt="Bootstrap logo" width="110px" /></td>
+      <img src="public/html-5-logo.svg" alt="HTML logo" width="110px" />
+      <img src="public/css-3-logo.svg" alt="CSS logo" width="110px" />
+      <img src="public/javascript-logo.svg" alt="JavaScript logo" width="110px" />
+      <img src="public/bootstrap-logo.svg" alt="Bootstrap logo" width="110px" />
 </p>
 
 <p align="center">
