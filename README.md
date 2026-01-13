@@ -1,14 +1,10 @@
 <h1 align="center">Website Examples</h1>
 
 <p align="center">
-  <table align="center">
-    <tr>
       <td><img src="public/html-5-logo.svg" alt="HTML logo" width="110px" /></td>
       <td><img src="public/css-3-logo.svg" alt="CSS logo" width="110px" /></td>
       <td><img src="public/javascript-logo.svg" alt="JavaScript logo" width="110px" /></td>
       <td><img src="public/bootstrap-logo.svg" alt="Bootstrap logo" width="110px" /></td>
-    </tr>
-  </table>
 </p>
 
 <p align="center">
@@ -39,3 +35,10 @@
 **HTML**, **CSS**, and **JavaScript** tutorials: [**W3Schools**](https://www.w3schools.com/) - [**GeeksforGeeks**](https://www.geeksforgeeks.org/web-tech/web-technology/).
 
 **sito-bootstrap** references: **[Bootstrap documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/) `v5.3.8`**
+
+---
+
+🌍 Read this in:
+
+- [English](README.md)
+- [Italiano](README.it.md)
