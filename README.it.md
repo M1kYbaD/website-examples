@@ -34,7 +34,7 @@
 
 Tutorial **HTML**, **CSS** e **JavaScript**: [W3Schools](https://www.w3schools.com/) - [GeeksforGeeks](https://www.geeksforgeeks.org/web-tech/web-technology/)
 
-Riferimenti per **sito-bootstrap**: [Documentazione Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/) `v5.3.8`
+Riferimenti per **sito-bootstrap**: **[Documentazione Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/) `v5.3.8`**
 
 ---
 
