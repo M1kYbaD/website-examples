@@ -23,7 +23,6 @@
 - Effects and animations with **CSS**.
 - Interactive scripts with **JavaScript**.
 - Integration with the **Bootstrap** front-end framework.
-- **Simple projects** to practice.
 
 ## Content
 
@@ -32,7 +31,7 @@
 
 ## Additional Resources
 
-**HTML**, **CSS**, and **JavaScript** tutorials: [**W3Schools**](https://www.w3schools.com/) - [**GeeksforGeeks**](https://www.geeksforgeeks.org/web-tech/web-technology/).
+**HTML**, **CSS**, and **JavaScript** tutorials/guides: [**W3Schools**](https://www.w3schools.com/) - [**GeeksforGeeks**](https://www.geeksforgeeks.org/web-tech/web-technology/).
 
 **sito-bootstrap** references: **[Bootstrap documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/) `v5.3.8`**
 
@@ -40,5 +39,5 @@
 
 🌍 Read this in:
 
-- [English](README.md)
 - [Italiano](README.it.md)
+- [English](README.md)
