@@ -31,7 +31,7 @@
 
 ## Risorse Aggiuntive
 
-Tutorial/guide **HTML**, **CSS** e **JavaScript**: [**W3Schools**](https://www.w3schools.com/) - [**GeeksforGeeks**](https://www.geeksforgeeks.org/web-tech/web-technology/)
+Tutorial/guide per **Web Development**: [**W3Schools**](https://www.w3schools.com/whatis/default.asp) - [**GeeksforGeeks**](https://www.geeksforgeeks.org/web-tech/web-technology/)
 
 Riferimenti per _sito-bootstrap_: **[Documentazione Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/) `v5.3.8`**
 

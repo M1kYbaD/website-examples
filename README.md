@@ -31,7 +31,7 @@
 
 ## Additional Resources
 
-**HTML**, **CSS**, and **JavaScript** tutorials/guides: [**W3Schools**](https://www.w3schools.com/) - [**GeeksforGeeks**](https://www.geeksforgeeks.org/web-tech/web-technology/).
+**Web Development** tutorials/guides: [**W3Schools**](https://www.w3schools.com/whatis/default.asp) - [**GeeksforGeeks**](https://www.geeksforgeeks.org/web-tech/web-technology/).
 
 _sito-bootstrap_ references: **[Bootstrap documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/) `v5.3.8`**
 
